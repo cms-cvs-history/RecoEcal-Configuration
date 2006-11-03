@@ -1,0 +1,41 @@
+# Full Event content 
+block RecoEcalFEVT = {
+  untracked vstring outputCommands = {
+    "keep *_ecalRecHit_*_*",
+    "keep *_ecalWeightUncalibRecHit_*_*"
+    "keep *_ecalPreshowerRecHit_*_*",
+    "keep *_islandBasicClusters_*_*",
+    "keep *_islandSuperClusters_*_*",
+    "keep *_hybridSuperClusters_*_*",
+    "keep *_correctedIslandBarrelSuperClusters_*_*",
+    "keep *_correctedIslandEndcapSuperClusters_*_*",
+    "keep *_correctedHybridSuperClusters_*_*",
+    "keep *_preshowerClusters_*_*",
+    "keep *_piZeroDiscriminators_*_*"
+  }		
+}	
+
+# RECO content
+block RecoEcalRECO = {
+  untracked vstring outputCommands = {
+    "keep *_islandBasicClusters_*_*",
+    "keep *_islandSuperClusters_*_*",
+    "keep *_hybridSuperClusters_*_*",
+    "keep *_correctedIslandEndcapSuperClusters_*_*",
+    "keep *_correctedHybridSuperClusters_*_*",
+    "keep *_preshowerClusters_*_*",
+    "keep *_piZeroDiscriminators_*_*"
+  }	
+}	
+
+# AOD content
+block RecoEcalAOD = {
+  untracked vstring outputCommands = {
+    "keep *_islandBasicClusters_*_*",
+    "keep *_islandSuperClusters_*_*",
+    "keep *_hybridSuperClusters_*_*",
+    "keep *_correctedIslandEndcapSuperClusters_*_*",
+    "keep *_correctedHybridSuperClusters_*_*",
+    "keep *_piZeroDiscriminators_*_*"
+  }
+}
