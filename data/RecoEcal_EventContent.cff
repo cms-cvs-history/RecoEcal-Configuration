@@ -2,7 +2,7 @@
 block RecoEcalFEVT = {
   untracked vstring outputCommands = {
     "keep *_ecalRecHit_*_*",
-    "keep *_ecalWeightUncalibRecHit_*_*"
+    "keep *_ecalWeightUncalibRecHit_*_*",
     "keep *_ecalPreshowerRecHit_*_*",
     "keep *_islandBasicClusters_*_*",
     "keep *_islandSuperClusters_*_*",
