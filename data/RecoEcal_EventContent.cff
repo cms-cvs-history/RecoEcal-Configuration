@@ -10,7 +10,7 @@ block RecoEcalFEVT = {
     "keep *_correctedIslandBarrelSuperClusters_*_*",
     "keep *_correctedIslandEndcapSuperClusters_*_*",
     "keep *_correctedHybridSuperClusters_*_*",
-    "keep *_preshowerClusters_*_*",
+    "keep *_correctedEndcapSuperClustersWithPreshower_*_*",
     "keep *_piZeroDiscriminators_*_*"
   }		
 }	
@@ -23,7 +23,7 @@ block RecoEcalRECO = {
     "keep *_hybridSuperClusters_*_*",
     "keep *_correctedIslandEndcapSuperClusters_*_*",
     "keep *_correctedHybridSuperClusters_*_*",
-    "keep *_preshowerClusters_*_*",
+    "keep *_correctedEndcapSuperClustersWithPreshower_*_*",
     "keep *_piZeroDiscriminators_*_*"
   }	
 }	
@@ -36,6 +36,7 @@ block RecoEcalAOD = {
     "keep *_hybridSuperClusters_*_*",
     "keep *_correctedIslandEndcapSuperClusters_*_*",
     "keep *_correctedHybridSuperClusters_*_*",
+    "keep recoSuperClusters_correctedEndcapSuperClustersWithPreshower_*",
     "keep *_piZeroDiscriminators_*_*"
   }
 }
