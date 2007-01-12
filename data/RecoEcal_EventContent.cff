@@ -36,7 +36,7 @@ block RecoEcalAOD = {
     "keep *_hybridSuperClusters_*_*",
     "keep *_correctedIslandEndcapSuperClusters_*_*",
     "keep *_correctedHybridSuperClusters_*_*",
-    "keep recoSuperClusters_correctedEndcapSuperClustersWithPreshower_*",
+    "keep recoSuperClusters_correctedEndcapSuperClustersWithPreshower_*_*",
     "keep *_piZeroDiscriminators_*_*"
   }
 }
