@@ -11,7 +11,7 @@ block RecoEcalFEVT = {
     "keep *_correctedIslandEndcapSuperClusters_*_*",
     "keep *_correctedHybridSuperClusters_*_*",
     "keep *_correctedEndcapSuperClustersWithPreshower_*_*",
-    "keep *_piZeroDiscriminators_*_*"
+    "keep *_preshowerClusterShape_*_*"
   }		
 }	
 
@@ -19,12 +19,12 @@ block RecoEcalFEVT = {
 block RecoEcalRECO = {
   untracked vstring outputCommands = {
     "keep *_islandBasicClusters_*_*",
-    "keep *_islandSuperClusters_*_*",
     "keep *_hybridSuperClusters_*_*",
-    "keep *_correctedIslandEndcapSuperClusters_*_*",
-    "keep *_correctedHybridSuperClusters_*_*",
+    "drop recoSuperClusters_hybridSuperClusters_*_*",
+    "keep recoSuperClusters_islandSuperClusters_islandBarrelSuperClusters_*",
+    "keep recoSuperClusters_correctedHybridSuperClusters_*_*",
     "keep *_correctedEndcapSuperClustersWithPreshower_*_*",
-    "keep *_piZeroDiscriminators_*_*"
+    "keep recoPreshowerClusterShapes_preshowerClusterShape_*_*"
   }	
 }	
 
@@ -32,11 +32,11 @@ block RecoEcalRECO = {
 block RecoEcalAOD = {
   untracked vstring outputCommands = {
     "keep *_islandBasicClusters_*_*",
-    "keep *_islandSuperClusters_*_*",
     "keep *_hybridSuperClusters_*_*",
-    "keep *_correctedIslandEndcapSuperClusters_*_*",
-    "keep *_correctedHybridSuperClusters_*_*",
+    "drop recoSuperClusters_hybridSuperClusters_*_*",
+    "keep recoSuperClusters_islandSuperClusters_islandBarrelSuperClusters_*",
+    "keep recoSuperClusters_correctedHybridSuperClusters_*_*",
     "keep recoSuperClusters_correctedEndcapSuperClustersWithPreshower_*_*",
-    "keep *_piZeroDiscriminators_*_*"
+    "keep recoPreshowerClusterShapes_preshowerClusterShape_*_*"
   }
 }
