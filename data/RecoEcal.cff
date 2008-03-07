@@ -23,7 +23,7 @@ include "RecoEcal/EgammaClusterProducers/data/fixedMatrixPreshowerClusteringSequ
 
 # create path with all clustering algos
 # NB: preshower MUST be run after island clustering in the endcap
-sequence ecalClusteringSequence = {
+sequence ecalClusters = {
                                     islandClusteringSequence,
                                     hybridClusteringSequence,
                                     preshowerClusteringSequence,
