@@ -21,14 +21,18 @@ include "RecoEcal/EgammaClusterProducers/data/fixedMatrixClusteringSequence.cff"
 # preshower sequence for fixed matrix clusters
 include "RecoEcal/EgammaClusterProducers/data/fixedMatrixPreshowerClusteringSequence.cff"
 
+#reduced recHit collection producer
+include "RecoEcal/EgammaClusterProducers/data/reducedRecHitsSequence.cff"
+
 # create path with all clustering algos
 # NB: preshower MUST be run after island clustering in the endcap
 sequence ecalClusters = {
-                                    #islandClusteringSequence,
-                                    hybridClusteringSequence,
-                                    #preshowerClusteringSequence,
-                                    #dynamicHybridClusteringSequence,
-                                    fixedMatrixClusteringSequence,
-                                    fixedMatrixPreshowerClusteringSequence
-                                  }
+    #islandClusteringSequence,
+    hybridClusteringSequence,
+    #preshowerClusteringSequence,
+    #dynamicHybridClusteringSequence,
+    fixedMatrixClusteringSequence,
+    fixedMatrixPreshowerClusteringSequence,
+    reducedRecHitsSequence
+}
 
