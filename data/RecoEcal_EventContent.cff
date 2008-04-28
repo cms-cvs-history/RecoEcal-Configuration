@@ -29,7 +29,7 @@ block RecoEcalRECO = {
     "keep *_correctedFixedMatrixSuperClustersWithPreshower_*_*",
     "keep recoPreshowerClusters_fixedMatrixSuperClustersWithPreshower_*_*",
     "keep *_correctedEndcapSuperClustersWithPreshower_*_*",
-    "keep recoPreshowerClusterShapes_preshowerClusterShape_*_*"
+    "keep recoPreshowerClusterShapes_preshowerClusterShape_*_*",
     "keep recoPreshowerClusterShapes_fixedMatrixPreshowerClusterShape_*_*"
   }	
 }	
@@ -46,7 +46,7 @@ block RecoEcalAOD = {
     "keep recoSuperClusters_correctedEndcapSuperClustersWithPreshower_*_*",
     "keep recoPreshowerClusters_fixedMatrixSuperClustersWithPreshower_*_*",
     "keep recoSuperClusters_correctedFixedMatrixSuperClustersWithPreshower_*_*",
-    "keep recoPreshowerClusterShapes_preshowerClusterShape_*_*"
+    "keep recoPreshowerClusterShapes_preshowerClusterShape_*_*",
     "keep recoPreshowerClusterShapes_fixedMatrixPreshowerClusterShape_*_*"
   }
 }
