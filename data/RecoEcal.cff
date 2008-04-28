@@ -4,16 +4,16 @@
 include "RecoEcal/EgammaClusterProducers/data/geometryForClustering.cff"
 
 # create sequence for island clustering
-include "RecoEcal/EgammaClusterProducers/data/islandClusteringSequence.cff"
+#include "RecoEcal/EgammaClusterProducers/data/islandClusteringSequence.cff"
 
 # hybrid clustering sequence
 include "RecoEcal/EgammaClusterProducers/data/hybridClusteringSequence.cff"
 
 # clusters in preshower
-include "RecoEcal/EgammaClusterProducers/data/preshowerClusteringSequence.cff"
+#include "RecoEcal/EgammaClusterProducers/data/preshowerClusteringSequence.cff"
 
 # dynamic hybrid sequence
-include "RecoEcal/EgammaClusterProducers/data/dynamicHybridClusteringSequence.cff"
+#include "RecoEcal/EgammaClusterProducers/data/dynamicHybridClusteringSequence.cff"
 
 # fixed matrix clusters
 include "RecoEcal/EgammaClusterProducers/data/fixedMatrixClusteringSequence.cff"
@@ -24,10 +24,10 @@ include "RecoEcal/EgammaClusterProducers/data/fixedMatrixPreshowerClusteringSequ
 # create path with all clustering algos
 # NB: preshower MUST be run after island clustering in the endcap
 sequence ecalClusters = {
-                                    islandClusteringSequence,
+                                    #islandClusteringSequence,
                                     hybridClusteringSequence,
-                                    preshowerClusteringSequence,
-                                    dynamicHybridClusteringSequence,
+                                    #preshowerClusteringSequence,
+                                    #dynamicHybridClusteringSequence,
                                     fixedMatrixClusteringSequence,
                                     fixedMatrixPreshowerClusteringSequence
                                   }
