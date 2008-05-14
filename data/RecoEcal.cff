@@ -15,11 +15,11 @@ include "RecoEcal/EgammaClusterProducers/data/preshowerClusteringSequence.cff"
 # dynamic hybrid sequence
 #include "RecoEcal/EgammaClusterProducers/data/dynamicHybridClusteringSequence.cff"
 
-# fixed matrix clusters
-include "RecoEcal/EgammaClusterProducers/data/fixedMatrixClusteringSequence.cff"
+# multi5x5 clusters
+include "RecoEcal/EgammaClusterProducers/data/multi5x5ClusteringSequence.cff"
 
-# preshower sequence for fixed matrix clusters
-include "RecoEcal/EgammaClusterProducers/data/fixedMatrixPreshowerClusteringSequence.cff"
+# preshower sequence for multi5x5 clusters
+include "RecoEcal/EgammaClusterProducers/data/multi5x5PreshowerClusteringSequence.cff"
 
 #reduced recHit collection producer
 include "RecoEcal/EgammaClusterProducers/data/reducedRecHitsSequence.cff"
@@ -31,8 +31,7 @@ sequence ecalClusters = {
     hybridClusteringSequence,
     preshowerClusteringSequence,
     #dynamicHybridClusteringSequence,
-    fixedMatrixClusteringSequence,
-    fixedMatrixPreshowerClusteringSequence,
+    multi5x5ClusteringSequence,
+    multi5x5PreshowerClusteringSequence,
     reducedRecHitsSequence
 }
-
