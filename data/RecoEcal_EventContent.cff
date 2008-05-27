@@ -1,7 +1,6 @@
 # Full Event content 
 block RecoEcalFEVT = {
   untracked vstring outputCommands = {
-	"keep *_ecalRecHit_*_*",
 	"keep *_reducedEcalRecHits*_*_*",
 	"keep *_interestingEcalDetId*_*_*",
 	"keep *_ecalWeightUncalibRecHit_*_*",
