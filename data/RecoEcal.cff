@@ -32,6 +32,5 @@ sequence ecalClusters = {
     preshowerClusteringSequence,
     #dynamicHybridClusteringSequence,
     multi5x5ClusteringSequence,
-    multi5x5PreshowerClusteringSequence,
-    reducedRecHitsSequence
+    multi5x5PreshowerClusteringSequence
 }
