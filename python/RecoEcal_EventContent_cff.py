@@ -65,4 +65,5 @@ RecoEcalAOD = cms.PSet(
 	# Preshower clusters
         'keep recoPreshowerClusters_multi5x5SuperClustersWithPreshower_*_*', 
         'keep recoPreshowerClusterShapes_multi5x5PreshowerClusterShape_*_*',
+        )
 )
