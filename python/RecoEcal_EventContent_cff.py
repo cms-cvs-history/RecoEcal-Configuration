@@ -14,6 +14,7 @@ RecoEcalFEVT = cms.PSet(
         'keep *_hybridSuperClusters_*_*',
         'keep *_uncleanedHybridSuperClusters_*_*',
         'keep *_correctedHybridSuperClusters_*_*',
+        'keep recoBasicClusters_hybridSuperClusters_*_*',      
 	# Endcap clusters
         'keep *_multi5x5*_*_*',
         'keep *_correctedMulti5x5*_*_*',
